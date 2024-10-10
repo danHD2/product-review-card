@@ -3,11 +3,11 @@ import './App.css'
 
 function Card() {
   
-  const [imageSrc, setImageSrc] = useState('../public/image-product-desktop.jpg');
+  const [imageSrc, setImageSrc] = useState('/image-product-desktop.jpg');
 
   const changeImageForMobile = () => {
-    const mobileImageSrc = '../public/image-product-mobile.jpg';
-    const desktopImageSrc = '../public/image-product-desktop.jpg';
+    const mobileImageSrc = '/image-product-mobile.jpg';
+    const desktopImageSrc = '/image-product-desktop.jpg';
 
     if (window.innerWidth <= 800) {
       setImageSrc(mobileImageSrc); 
@@ -39,7 +39,7 @@ function Card() {
               <h2>$149.99</h2>
               <p className='oldprice'>$169.99</p>
               <button>
-                  <img src='../../public/icon-cart.svg'></img>
+                  <img src='/icon-cart.svg'></img>
                   Add to Cart</button>
           </div>
       </div>
